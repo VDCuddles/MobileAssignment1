@@ -32,7 +32,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/portalButton"
         android:layout_alignLeft="@+id/mapsButton"
-        android:layout_alignStart="@+id/mapsButton" />
+        android:layout_alignStart="@+id/mapsButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -42,7 +43,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/studyOptionsButton"
         android:layout_alignLeft="@+id/phoneButton"
-        android:layout_alignStart="@+id/phoneButton" />
+        android:layout_alignStart="@+id/phoneButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -92,7 +94,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_marginBottom="24dp"
         android:layout_above="@+id/linkinButton"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -103,7 +106,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_marginBottom="37dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -113,7 +117,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/linkinButton"
         android:layout_toLeftOf="@+id/linkinButton"
-        android:layout_toStartOf="@+id/linkinButton" />
+        android:layout_toStartOf="@+id/linkinButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -123,7 +128,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/youtButton"
         android:layout_toLeftOf="@+id/portalButton"
-        android:layout_toStartOf="@+id/portalButton" />
+        android:layout_toStartOf="@+id/portalButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -133,7 +139,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/twitButton"
         android:layout_toLeftOf="@+id/twitButton"
-        android:layout_toStartOf="@+id/twitButton" />
+        android:layout_toStartOf="@+id/twitButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -143,7 +150,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/ITSupportButton"
         android:layout_alignRight="@+id/aboutUnitecButton"
-        android:layout_alignEnd="@+id/aboutUnitecButton" />
+        android:layout_alignEnd="@+id/aboutUnitecButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -153,7 +161,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/gplusButton"
         android:layout_toLeftOf="@+id/gplusButton"
-        android:layout_toStartOf="@+id/gplusButton" />
+        android:layout_toStartOf="@+id/gplusButton"
+        android:onClick="parseToWebView"/>
 
     <TextView
         android:id="@+id/infoText"
@@ -163,7 +172,7 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="13dp"
-        android:text="Please click one of the above buttons for easy contact, or one of the below buttons for online resources. "
+        android:text="Please click one of the circular buttons above for easy contact, or one of the other buttons for online resources. "
         android:textAlignment="center"
         android:textSize="30sp" />
 

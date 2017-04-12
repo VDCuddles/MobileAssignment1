@@ -20,7 +20,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/studyOptionsButton"
         android:layout_alignLeft="@+id/ITSupportButton"
-        android:layout_alignStart="@+id/ITSupportButton" />
+        android:layout_alignStart="@+id/ITSupportButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -54,7 +55,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_marginTop="23dp"
         android:layout_below="@+id/libraryButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -63,7 +65,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:id="@+id/youtButton"
         android:background="#00000000"
         android:layout_alignTop="@+id/twitButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -96,7 +99,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_marginTop="20dp"
         android:layout_below="@+id/aboutUnitecButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -106,7 +110,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/libraryButton"
         android:layout_toRightOf="@+id/youtButton"
-        android:layout_toEndOf="@+id/youtButton" />
+        android:layout_toEndOf="@+id/youtButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -116,7 +121,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_below="@+id/emailButton"
         android:layout_toLeftOf="@+id/youtButton"
-        android:layout_toStartOf="@+id/youtButton" />
+        android:layout_toStartOf="@+id/youtButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -126,7 +132,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/youtButton"
         android:layout_alignRight="@+id/phoneButton"
-        android:layout_alignEnd="@+id/phoneButton" />
+        android:layout_alignEnd="@+id/phoneButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -137,7 +144,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_marginBottom="17dp"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/phoneButton"
-        android:layout_toStartOf="@+id/phoneButton" />
+        android:layout_toStartOf="@+id/phoneButton"
+        android:onClick="parseToWebView"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -147,7 +155,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:background="#00000000"
         android:layout_alignTop="@+id/gplusButton"
         android:layout_toRightOf="@+id/gplusButton"
-        android:layout_toEndOf="@+id/gplusButton" />
+        android:layout_toEndOf="@+id/gplusButton"
+        android:onClick="parseToWebView"/>
 
     <TextView
         android:id="@+id/infoText"
@@ -157,7 +166,7 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_alignLeft="@+id/studyOptionsButton"
         android:layout_alignStart="@+id/studyOptionsButton"
         android:layout_marginBottom="39dp"
-        android:text="Please click one of the above buttons for easy contact, or one of the below buttons for online resources. "
+        android:text="Please click one of the three buttons below for easy contact, or one of the other buttons for online resources."
         android:textAlignment="center"
         android:textSize="30sp" />
 
