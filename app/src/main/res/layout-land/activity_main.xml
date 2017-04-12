@@ -17,61 +17,53 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/email"
-        android:id="@+id/imageButton6"
+        android:id="@+id/emailButton"
         android:background="#00000000"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="sendEmail" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/studyoptions"
-        android:id="@+id/imageButton4"
+        android:id="@+id/studyOptionsButton"
         android:background="#00000000"
-        android:layout_alignTop="@+id/imageButton5"
-        android:layout_alignLeft="@+id/imageButton8"
-        android:layout_alignStart="@+id/imageButton8" />
+        android:layout_alignTop="@+id/portalButton"
+        android:layout_alignLeft="@+id/mapsButton"
+        android:layout_alignStart="@+id/mapsButton" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/itsupport"
-        android:id="@+id/imageButton3"
+        android:id="@+id/ITSupportButton"
         android:background="#00000000"
-        android:layout_alignTop="@+id/imageButton4"
-        android:layout_alignLeft="@+id/imageButton7"
-        android:layout_alignStart="@+id/imageButton7" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/library"
-        android:id="@+id/imageButton2"
-        android:background="#00000000"
-        android:layout_alignTop="@+id/imageButton3"
-        android:layout_alignRight="@+id/imageButton13"
-        android:layout_alignEnd="@+id/imageButton13" />
+        android:layout_alignTop="@+id/studyOptionsButton"
+        android:layout_alignLeft="@+id/phoneButton"
+        android:layout_alignStart="@+id/phoneButton" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/about"
-        android:id="@+id/imageButton13"
+        android:id="@+id/aboutUnitecButton"
         android:background="#00000000"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="parseToWebView" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/phone"
-        android:id="@+id/imageButton7"
+        android:id="@+id/phoneButton"
         android:background="#00000000"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageButton13"
-        android:layout_toEndOf="@+id/imageButton13"
+        android:layout_toRightOf="@+id/aboutUnitecButton"
+        android:layout_toEndOf="@+id/aboutUnitecButton"
         android:layout_marginLeft="59dp"
         android:layout_marginStart="59dp" />
 
@@ -79,22 +71,22 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/maps"
-        android:id="@+id/imageButton8"
+        android:id="@+id/mapsButton"
         android:background="#00000000"
         android:layout_marginRight="38dp"
         android:layout_marginEnd="38dp"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/imageButton6"
-        android:layout_toStartOf="@+id/imageButton6" />
+        android:layout_toLeftOf="@+id/emailButton"
+        android:layout_toStartOf="@+id/emailButton" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/portal"
-        android:id="@+id/imageButton5"
+        android:id="@+id/portalButton"
         android:background="#00000000"
         android:layout_marginTop="67dp"
-        android:layout_below="@+id/imageButton7"
+        android:layout_below="@+id/phoneButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -102,7 +94,7 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/linkedin"
-        android:id="@+id/imageButton12"
+        android:id="@+id/linkinButton"
         android:background="#00000000"
         android:layout_marginBottom="37dp"
         android:layout_alignParentBottom="true"
@@ -113,40 +105,50 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/googleplus"
-        android:id="@+id/imageButton11"
+        android:id="@+id/gplusButton"
         android:background="#00000000"
-        android:layout_alignTop="@+id/imageButton12"
-        android:layout_toLeftOf="@+id/imageButton12"
-        android:layout_toStartOf="@+id/imageButton12" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/youtube"
-        android:id="@+id/imageButton10"
-        android:background="#00000000"
-        android:layout_alignTop="@+id/imageButton11"
-        android:layout_toLeftOf="@+id/imageButton11"
-        android:layout_toStartOf="@+id/imageButton11" />
+        android:layout_alignTop="@+id/linkinButton"
+        android:layout_toLeftOf="@+id/linkinButton"
+        android:layout_toStartOf="@+id/linkinButton" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/twitter"
-        android:id="@+id/imageButton9"
+        android:id="@+id/twitButton"
         android:background="#00000000"
-        android:layout_alignTop="@+id/imageButton10"
-        android:layout_toLeftOf="@+id/imageButton5"
-        android:layout_toStartOf="@+id/imageButton5" />
+        android:layout_alignTop="@+id/youtButton"
+        android:layout_toLeftOf="@+id/portalButton"
+        android:layout_toStartOf="@+id/portalButton" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/facebook"
-        android:id="@+id/imageButton"
+        android:id="@+id/fbButton"
         android:background="#00000000"
-        android:layout_alignTop="@+id/imageButton9"
-        android:layout_toLeftOf="@+id/imageButton9"
-        android:layout_toStartOf="@+id/imageButton9" />
+        android:layout_alignTop="@+id/twitButton"
+        android:layout_toLeftOf="@+id/twitButton"
+        android:layout_toStartOf="@+id/twitButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/library"
+        android:id="@+id/libraryButton"
+        android:background="#00000000"
+        android:layout_alignTop="@+id/ITSupportButton"
+        android:layout_toLeftOf="@+id/phoneButton"
+        android:layout_toStartOf="@+id/phoneButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/youtube"
+        android:id="@+id/youtButton"
+        android:background="#00000000"
+        android:layout_alignTop="@+id/gplusButton"
+        android:layout_toLeftOf="@+id/gplusButton"
+        android:layout_toStartOf="@+id/gplusButton" />
 
 </RelativeLayout>
