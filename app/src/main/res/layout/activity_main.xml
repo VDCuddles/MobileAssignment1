@@ -82,7 +82,8 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_marginBottom="61dp"
         android:layout_above="@+id/fbButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="sendEmail" />
 
     <ImageButton
         android:layout_width="wrap_content"
