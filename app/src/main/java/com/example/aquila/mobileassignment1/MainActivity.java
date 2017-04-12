@@ -131,4 +131,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(phoneIntent, "Make Call to 0800 Number"));
 
     }
+
+    public void sendMaps (View aView)
+    {
+    Intent intent = new Intent(this, MapActivity.class);
+    startActivity(intent);
+    }
 }
