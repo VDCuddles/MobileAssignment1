@@ -1,6 +1,7 @@
 package com.example.aquila.mobileassignment1;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -114,6 +115,20 @@ public class MainActivity extends AppCompatActivity {
         emailIntent.putExtra(Intent.EXTRA_TEXT, "Please enter your query here.");
 
         startActivity(Intent.createChooser(emailIntent, "Send Email"));
+
+    }
+
+    public void sendPhone (View aView)
+    {
+
+        String phoneNum = "0800109510";
+
+        String uri = "tel:" + phoneNum.trim() ;
+        Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
+        phoneIntent.setData(Uri.parse(uri));
+        startActivity(phoneIntent);
+
+        startActivity(Intent.createChooser(phoneIntent, "Make Call to 0800 Number"));
 
     }
 }

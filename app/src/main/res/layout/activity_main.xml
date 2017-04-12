@@ -50,10 +50,10 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         app:srcCompat="@drawable/studyoptions"
         android:id="@+id/studyOptionsButton"
         android:background="#00000000"
+        android:layout_marginTop="23dp"
         android:layout_below="@+id/libraryButton"
-        android:layout_alignLeft="@+id/libraryButton"
-        android:layout_alignStart="@+id/libraryButton"
-        android:layout_marginTop="39dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -70,6 +70,7 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         app:srcCompat="@drawable/phone"
         android:id="@+id/phoneButton"
         android:background="#00000000"
+        android:onClick="sendPhone"
         android:layout_alignTop="@+id/emailButton"
         android:layout_centerHorizontal="true" />
 
@@ -79,11 +80,11 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         app:srcCompat="@drawable/email"
         android:id="@+id/emailButton"
         android:background="#00000000"
-        android:layout_marginBottom="61dp"
+        android:layout_marginBottom="35dp"
+        android:onClick="sendEmail"
         android:layout_above="@+id/fbButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="sendEmail" />
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -91,10 +92,10 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         app:srcCompat="@drawable/library"
         android:id="@+id/libraryButton"
         android:background="#00000000"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/aboutUnitecButton"
-        android:layout_toLeftOf="@+id/youtButton"
-        android:layout_toStartOf="@+id/youtButton" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -146,5 +147,17 @@ tools:context="com.example.aquila.mobileassignment1.MainActivity">
         android:layout_alignTop="@+id/gplusButton"
         android:layout_toRightOf="@+id/gplusButton"
         android:layout_toEndOf="@+id/gplusButton" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mapsButton"
+        android:layout_alignLeft="@+id/studyOptionsButton"
+        android:layout_alignStart="@+id/studyOptionsButton"
+        android:layout_marginBottom="39dp"
+        android:text="Please click one of the above buttons for easy contact, or one of the below buttons for online resources. "
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
 </RelativeLayout>
