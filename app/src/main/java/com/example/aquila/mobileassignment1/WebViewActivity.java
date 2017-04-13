@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+//this activity is for the WebView; the URL to load is parsed in from MainActivity
+
 public class WebViewActivity extends AppCompatActivity {
 
     @Override

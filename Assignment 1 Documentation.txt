@@ -1,0 +1,17 @@
+ISCG 7424 Assignment 1 Documentation
+
+Aquila Halpe (1459836)
+
+For this application I aimed to be as simple, yet practically useful as possible. I used Relative Layout, and designed my own custom images for the buttons to be used. This application is optimised for Nexus 10, using both portait and landscape orientations. This is because implementing this is rather simple and does not take very much time, whereas adding support for other sizes of phone would have been a bit more tedious; it would not have been difficult, but this is time that could be better spent on more useful features.
+
+The most notable "advanced function" or "innovative feature" would be the Easy Contact feature; this is in the form of the email and phone buttons mainly. These buttons send an intent to the most appropriate application for that respective contact type with prepopulated data to facilitate contact to Unitec staff; i.e., email button starts up a pre-populated draft email to study@unitec.ac.nz using the phone's email app, and the phone button opens the phone app with 0800 10 95 10. The Maps button was intended to prepopulate Google Maps with the user's currect GPS position / nearest campus location, but I opted against this due to time and implementation constraints; I felt the more important feature to have in the map would be easily accessible maps of the two Unitec campuses. The rest of the app is quite simple; buttons parsing URLs to open a webview with an online HTML to view.
+
+No third party libraries were used; only advice and troubleshooting from the Android Developer Documentation and StackOverflow.
+
+Currently no known issues.
+
+There is more work that could go into it; proper backend could be implemented, email and phone pages could lead to a new activity with multiple choices of contact numbers/addresses to be used, and the map feature could be implemented as mentioned above; however as I said, I felt these features were not as vital or practical for the purposes of this application; the main focus was practical and functional programming. Perhaps some visual properties could be improved, but as this is a coding assignment and not a graphic design assignment, this is considered secondary.
+
+I would say this app was developed in under 20 hours worth of work.
+
+Other papers taken - Enterprise Java, (Advanced) Game Programming, Web Application development.
